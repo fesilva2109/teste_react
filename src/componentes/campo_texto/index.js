@@ -1,6 +1,8 @@
+import { useState } from "react"
 import "./TextField.css"
 const TextField = (props) => {
-    let valor = ''
+
+    const [valor, setValor] = useState('')
     const aoDigitado = (evento)=>{
         valor = (evento.target.value)
         console.log(valor)
